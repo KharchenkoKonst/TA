@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MP_Recognizer/MP_Recognizer.iml" filepath="$PROJECT_DIR$/MP_Recognizer/MP_Recognizer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecursiveDescent/RecursiveDescent.iml" filepath="$PROJECT_DIR$/RecursiveDescent/RecursiveDescent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TransferIdentification/TransferIdentification.iml" filepath="$PROJECT_DIR$/TransferIdentification/TransferIdentification.iml" />
+    </modules>
+  </component>
+</project>
