@@ -27,10 +27,10 @@ class MP(private val chain: String) {
         }
 
         if (state == "work") {
-            when {
-                TABLE[y][x] == 'e' -> state = "error"
-                TABLE[y][x] == 'p' -> p()
-                TABLE[y][x] == 'o' -> op()
+            when (TABLE[y][x]) {
+                'e' -> state = "error"
+                'p' -> p()
+                'o' -> op()
                 else -> state = "allow"
             }
         }
@@ -189,7 +189,7 @@ class MP(private val chain: String) {
             'a' -> {
                 buf = mag.last()
                 if (POD.getValue('E').contains(buf) &&
-                    listOf('+', '*', 'a', 'E').contains(mag.size.let { mag[it - 2] })
+                    listOf('+', '*', 'a', 'E').contains(with(mag.size) { mag[this - 2] })
                 ) {
                     mag.add('E')
                     println("Свёртка по правилу 12")

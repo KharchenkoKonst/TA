@@ -1,5 +1,5 @@
 class MP {
-    private val magazine = emptyList<Char>().toMutableList()
+    private val magazine = mutableListOf<Char>()
     private val table = TABLE_OF_RULES
     private val magazineSymbols = RECOGNIZER_SYMBOLS
     private val chainSymbols = CHAIN_SYMBOLS
